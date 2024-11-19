@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root{
+    --card-bg:hsl(216, 50%, 16%);
+    --card-card-bg-br: 10px;
+    --main-bg:hsl(217, 54%, 11%);
+}
+body{
+    background-color: var(--main-bg);
+
+}
+
+main{
+    background-color: hsl(216, 50%, 16%);
+    margin: 3.6rem 1.1rem 1rem;
+    padding: 1.5rem 1rem; 
+    border-radius: var(--card-card-bg-br);
+}
+
+header{
+    border-radius: var(--card-card-bg-br);
+}
+
+.equilibrium{
+    width: 100%;
+    border-radius: var(--card-card-bg-br);
+}
+
+header h1{
+    color: hsl(0, 0%, 100%);
+    margin-block: 1.8rem;
+    font-size: 1.5rem;
+}
+
+header p{
+    color: #ffffff7a;
+    margin-block: 1.3rem;
+    line-height: 1.2;  
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ffffff7a;
+    margin-bottom: 1rem;
+}
+
+.icon{
+    margin-bottom: 1.1rem;
+}
+
+.one{
+    color: cyan;
+}
+.one span{
+    padding-left: 0.5rem;
+}
+
+.two{
+    color: #ffffff7a;
+    
+}
+
+.avatar{
+    border: 1px solid white;
+    border-radius: 100%;
+    width: 12%;
+}
+
+.test{
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.7rem;
+    margin-bottom: -2rem;
+}
+
+.test p{
+   margin-left: 15px;
+   color: #ffffff7a;
+}
+
+.test span{
+    color: #fff;
+
+}
+
+@media screen and (min-width: 600px){
+
+    body{
+        width: 100%;
+        background-color: #fff;
+    
+    }
+    .equilibrium{
+        width: 100%;
+        
+        border-radius: var(--card-card-bg-br);
+    }
+
+    main{
+        background-color: black;
+        margin: 2rem 2rem;
+        padding: 5rem 16rem; 
+        border-radius: 0;
+    }
+    header{
+      background-color: var(--card-bg);
+      padding: 1rem 1rem;
+     
+    }
+}
+@media screen and (min-width: 1000px){
+
+    body{
+        width: 100%;
+        background-color: #fff;
+    }
+    .equilibrium{
+        min-width: 50px;
+        min-height: 50px;
+        border-radius: var(--card-card-bg-br);
+    }
+
+    main{
+        
+        background-color: hsl(216, 50%, 16%);
+        background-color: black;
+        margin: 2rem 3.9rem;
+        padding: 1.5rem 30rem; 
+        
+    }
+    header{
+      background-color: var(--card-bg);
+      padding: 1rem 0.8rem;
+    }
+}
